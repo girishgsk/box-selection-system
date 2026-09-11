@@ -1,4 +1,4 @@
-# AI-Assisted Box Selection System
+# Assisted Box Selection System
 
 A Django REST API that recommends a suitable shipping box for a set of products based on product dimensions, quantity, weight, box dimensions, maximum weight capacity, and box cost.
 
