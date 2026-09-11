@@ -1,31 +1,34 @@
 # AI Usage
 
-## AI Tool Used
+1. AI Tool Used:-
 
-ChatGPT was used as a development assistant during the assignment.
+ChatGPT Free was used as a development assistant during the assignment.
 
 ## Areas Where AI Was Used
 
 AI assistance was used for:
 
-- Django project setup guidance
+- I have made this project in my new device so i have to set up the Env firstly to run the django project.
+- First to understand what the Assessment is, and what I have to develop
+- Django project setup
 - Django REST Framework API structure
 - Serializer design
 - API validation
-- Initial implementation ideas for the box recommendation algorithm
-- Test case suggestions
+- Implementation ideas for the box recommendation algorithm
+- Test case file creation
 - Debugging test failures
 - README/documentation structure
-- GitHub Actions configuration
 
 ## Important Prompts / Questions
 
 Examples of prompts used during development:
 
-- How should I structure a small Django REST API for this assignment?
-- How should I model products and boxes in Django?
-- How can I validate the product quantity in Django REST Framework?
-- How should I implement a box recommendation algorithm that considers dimensions, rotation, quantity and weight?
+- Give me the detail of Assessement 
+- Check the env of the new device so later there is no any env related issues
+- like which version of the python is needed in the django and then download the necessary modules and packages
+- About the assessment, the algorithm 
+- the working of the api, how to test 
+- how to test the api fastly -- with the curl command
 - How should I test the recommendation API?
 - Why is my quantity test failing?
 - How should I prepare the Django project for GitHub submission?
@@ -40,7 +43,8 @@ All generated code was reviewed, executed and tested locally before being retain
 
 Some generated suggestions were modified after testing.
 
-For example, an initial test expected two laptops to require a Medium Box. After implementing the 3D packing logic and testing the actual dimensions, it was determined that two laptops can fit inside the Small Box by stacking them.
+For example: an initial test expected two laptops to require a Medium Box. After implementing the 3D packing logic and testing the actual dimensions, it was determined that two laptops can fit inside the Small Box by stacking them.
+- due to this we able to make the 3d logic
 
 The test expectation was therefore corrected rather than changing the algorithm to satisfy an incorrect test.
 
@@ -48,20 +52,18 @@ The test expectation was therefore corrected rather than changing the algorithm 
 
 One important issue identified during verification was that an initial test assumption did not match the physical dimensions of the products and boxes.
 
-The AI-assisted implementation also uses a heuristic packing strategy rather than an exact optimal 3D bin-packing algorithm.
-
 ## Verification
 
 AI-generated code was verified by:
 
 - Running Django system checks
 - Running the Django test suite
-- Manually testing the API with curl
-- Checking expected HTTP status codes
+- Manually testing the API with curl and Postman
 - Checking product rotation
 - Checking quantity handling
 - Checking box weight limits
 - Checking the no-suitable-box scenario
+- All the test cases are in the test.py file
 
 Final test result:
 
